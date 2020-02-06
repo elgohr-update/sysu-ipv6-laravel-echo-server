@@ -1,4 +1,4 @@
 FROM node:latest
-WORKDIR /app
 RUN npm install -g laravel-echo-server
+WORKDIR /app
 CMD ["laravel-echo-server", "start"]
