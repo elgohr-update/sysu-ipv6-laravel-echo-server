@@ -5,8 +5,8 @@
 	"database": "redis",
 	"databaseConfig": {
 		"redis": {
-      "port": "{{ ECHO_REDIS_PORT }}",
-      "host": "{{ ECHO_REDIS_HOSTNAME }}"
+		      "port": "{{ ECHO_REDIS_PORT }}",
+		      "host": "{{ ECHO_REDIS_HOSTNAME }}"
 		}
 	},
 	"devMode": "{{ ECHO_DEVMODE }}",
@@ -24,4 +24,8 @@
 		"allowMethods": "{{ ECHO_ALLOW_METHODS }}",
 		"allowHeaders": "{{ ECHO_ALLOW_HEADERS }}"
 	}
+	"subscribers": {
+		"http": true,
+		"redis": true
+	},
 }
